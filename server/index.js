@@ -1,5 +1,3 @@
-//var MongoClient = require('mongodb').MongoClient;
-//var url = "mongodb://localhost:27017/agendanode";
 const http = require('http'),
       path = require('path'),
       Routing = require('./rutas.js'),
@@ -12,7 +10,6 @@ const PORT = 3000
 const app = express()
 
 const Server = http.createServer(app)
-
 
 mongoose.connect('mongodb://localhost/agendanode',  { useNewUrlParser: true })
 
